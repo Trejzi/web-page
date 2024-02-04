@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../font/Poppins-Bold.ttf') format('truetype');
+}
+
+#blog-intro{
+    background-color: #fff301;
+    padding: 2em 1em;
+}
+
+#blog-intro h1{
+    font-size: 2rem;
+}
+
+#blog-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 2em;
+}
+
+.button-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+   
+}
+
+.button-container button{
+  background-color: transparent;
+  border: none;
+  font-family: "Poppins-Bold";
+  font-size: 1.2em;
+  color: #777777;
+  cursor: pointer;
+}
+
+#blog-cards .text{
+    background-color: #ededed;
+    padding: 1em 1.5em;
+}
+
+@media screen and (min-width:770px){
+    #blog-intro{
+        padding: 5em 1em;
+    }
+
+    #blog-intro p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1000px){
+    #blog-intro{
+        padding: 5em 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #blog-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .button-container{
+        grid-column: 1 / span 3;
+    }
+
+  
+}
+
+
+#blog-cards .post{
+    display: none;
+}

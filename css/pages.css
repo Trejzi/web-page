@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../font/Poppins-Bold.ttf') format('truetype');
+}
+
+
+#about{
+    background-color: #fff301;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0em;
+}
+#about p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#about div:first-of-type{
+    padding: 2em 1em;
+    padding-bottom: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+}
+
+
+#about div:first-of-type h1 {
+   font-size: 2rem;
+   margin: 0;
+}
+
+#about div:last-of-type{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    padding: 5em 2em;
+    position: relative;
+}
+#about div:last-of-type #quotationMark{
+    position: absolute;
+    top: -6em;
+    left: 0;
+}
+
+#about span{
+  color: #fff301;
+  font-family: 'Poppins-Bold';
+  font-size: 1.2rem;
+}
+
+
+
+#mission{
+    padding: 3em 0em;
+}
+
+#mission article:first-of-type{
+    background-color: #fff301;
+    padding: 2em 1em;
+}
+#mission article:nth-of-type(2){
+    background-color: #000;
+    padding: 2em 1em;
+    color: #fff;
+}
+#mission article:nth-of-type(2) h2{
+    color: #fff301;
+}
+#mission h2{
+    font-size: 2rem;
+    margin: 0;
+}
+#mission p{
+    font-size: 1.2rem;
+}
+
+
+#values{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.5em;
+}
+
+#values h2 {
+    font-size: 2rem;
+}
+
+@media screen and (min-width:1000px){
+    /*about section*/
+    #about {
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 5em 0em;
+        }
+    #about div:last-of-type {
+        padding: 5em 2em;
+        align-self: center;
+    }
+
+     /* mission section */
+     #mission {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        padding: 5em 0em;
+    }
+    #mission article:nth-of-type(1){
+        width: 60%;
+        padding: 6em 3em;
+        padding-right: 10em;
+
+    }
+    
+     #mission article:nth-of-type(2){
+        position: absolute;
+        left: 50%;
+        padding: 4em;
+
+    }
+    
+
+    /* values section */
+    #values{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 1.5em;
+        column-gap: 4em;
+    }
+    #values img{
+        grid-row: 1/span 5;
+    }
+}
